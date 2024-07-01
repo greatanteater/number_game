@@ -5,6 +5,7 @@ let resultImage = document.getElementById("result-image");
 let resultArea = document.getElementById("result-area");
 let resetButton = document.getElementById("reset-button");
 let chanceArea = document.getElementById("chance-area");
+let answerArea = document.getElementById("answer-area");
 let chances = 3;
 let gameOver = false;
 let history = [];
@@ -18,6 +19,7 @@ userInput.addEventListener("focus", function () {
 function pickRandomNumb() {
   computerNum = Math.floor(Math.random() * 100) + 1;
   console.log("정답", computerNum);
+  answerArea.textContent = `정답: ${computerNum}`;
 }
 
 function play() {

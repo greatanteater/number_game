@@ -23,7 +23,7 @@ body {
     max-width: 50vh;
   }
   
-  #result-area, #chance-area {
+  #result-area, #chance-area, #answer-area {
     font-size: 24px;
     margin: 20px 0;
     padding: 10px;
