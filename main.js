@@ -19,7 +19,7 @@ userInput.addEventListener("focus", function () {
 function pickRandomNumb() {
   computerNum = Math.floor(Math.random() * 100) + 1;
   console.log("정답", computerNum);
-  answerArea.textContent = `정답: ${computerNum}`;
+  answerArea.textContent = `정답: ${computerNum}, 입력한 번호: 없음`;
 }
 
 function play() {
@@ -56,6 +56,7 @@ function play() {
   }
 
   history.push(userValue);
+  answerArea.textContent = `정답: ${computerNum}, 입력한 번호: ${history}`;
 
   if (chances < 1) {
     resultImage.src = "fail.jpg";
