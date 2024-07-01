@@ -16,11 +16,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vw;
+    height: 50vh;
   }
   
   #result-image-area img {
-    max-width: 50vw;
+    max-width: 50vh;
   }
   
   #result-area, #chance-area {
@@ -72,6 +72,14 @@ body {
     h1 {
       font-size: 28px;
     }
+
+    #result-image-area {
+        height: 70vw;
+      }
+      
+      #result-image-area img {
+        max-width: 70vw;
+      }
   
     #result-area, #chance-area {
       font-size: 20px;
