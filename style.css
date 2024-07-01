@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    margin-top: 50px;
+    font-size: 36px;
+    color: #4169e1;
+  }
+
+  #result-image-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+  }
+  
+  #result-image-area img {
+    max-width: 50vw;
+  }
+  
+  #result-area, #chance-area {
+    font-size: 24px;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #user-input {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    margin-right: 10px;
+  }
+
+  #user-input::placeholder {
+    color: #4169e1;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4169e1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 5px;
+  }
+  
+  button:hover {
+    background-color: #1e90ff;
+  }
+
+  button:disabled {
+    background-color: grey;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    #result-area, #chance-area {
+      font-size: 20px;
+    }
+  
+    #user-input {
+      font-size: 16px;
+      width: 100px;
+    }
+
+    #user-input::placeholder {
+        color: #4169e1;
+        font-weight: normal;
+        font-size: 10px;
+      }
+  
+    button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }  
